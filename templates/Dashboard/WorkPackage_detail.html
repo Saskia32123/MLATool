@@ -1,0 +1,227 @@
+{% extends 'Dashboard/index.html' %}
+{% load static %}
+<body>
+{% block content %}
+<h1>{{ object.title }}</h1>
+<p>{{ object.description }}</p>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1"
+         role="dialog" aria-labelledby="exampleModalCenterTitle"
+         aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-xl"
+             role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"
+                        id="exampleModalLongTitle">
+                        Details</h5>
+                    <button type="button" class="close"
+                            data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="modal-body">
+                            <div class="container-fluid">
+                                <div class="col-4">
+                                    <div class="row">
+                                    <p class="p-2 col-2 circle red">
+                                            {{ object.description }}
+                                            </p>
+                                        <br/>
+                                        {% if recipient_rating == Rating.Rot %}
+                                            <p class="p-2 col-2 circle red">
+                                            </p>
+                                        {% endif %}
+                                        {% if performer_rating == Rating.Gelb %}
+                                            <p class="p-2 col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                     width="16"
+                                                     height="16"
+                                                     fill="yellow"
+                                                     style="border: 1px solid black; border-radius: 50%"
+                                                     class="bi bi-circle-fill"
+                                                     viewBox="0 0 16 16">
+                                                    <circle cx="8" cy="8"
+                                                            r="8"></circle>
+                                                </svg>
+                                            </p>
+                                        {% endif %}
+                                        {% if workpackage.performer_rating == workpackage.Rating.Gruen %}
+                                            <p class="p-2 col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                     width="16"
+                                                     height="16"
+                                                     fill="green"
+                                                     style="border: 1px solid black; border-radius: 50%"
+                                                     class="bi bi-circle-fill"
+                                                     viewBox="0 0 16 16">
+                                                    <circle cx="8" cy="8"
+                                                            r="8"></circle>
+                                                </svg>
+                                            </p>
+                                        {% endif %}
+                                        {% if workpackage.performer_rating == workpackage.Rating.Undefined %}
+                                            <p class="p-2 col-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                     width="16"
+                                                     height="16"
+                                                     fill="grey"
+                                                     style="border: 1px solid black; border-radius: 50%"
+                                                     class="bi bi-circle-fill"
+                                                     viewBox="0 0 16 16">
+                                                    <circle cx="8" cy="8"
+                                                            r="8"></circle>
+                                                </svg>
+                                            </p>
+                                        {% endif %}
+                                        <label for="inputState"
+                                               class="col-2 form-label">Total Rating</label>
+                                    </div>
+                                </div>
+                                <div class="col-4 ml-auto">
+                                    <label for="inputState"
+                                           class="form-label">Status</label>
+                                    <input class="form-control"
+                                           type="text"
+                                           placeholder="To Do"
+                                           aria-label="Disabled input example"
+                                           disabled> {{ WP_ID }}
+                                </div>
+                                <hr/>
+                                <row>
+                                    <label for="recipient"
+                                           class="form-label">Recipient</label>
+                                    <div id="recipient" class="col-6 form-outline">
+                                        <label for="inputState"
+                                               class="form-label">Deadline</label>
+                                         <p class="p-2 col-md-2"> {{ rg_area }}</p>
+                                    </div>
+                                    <div class="col-4">
+                                        <label for="inputState"
+                                               class="form-label"><b>Recipient</b></label>
+                                        <input class="form-control" type="text"
+                                               placeholder="{{ workpackage.Recipient }}"
+                                               aria-label="Disabled input example"
+                                               disabled>
+                                    </div>
+                                </row>
+                                <row>
+                                    <div class="md-4">
+                                        <label for="inputState"
+                                               class="form-label">Rating</label>
+                                        <select id="inputState"
+                                                class="form-select">
+                                            <option style="color: green">Grün
+                                            </option>
+                                            <option style="color: yellow">Gelb
+                                            </option>
+                                            <option style="color: red">Rot
+                                            </option>
+                                            <option style="color: grey"
+                                                    selected="selected">Not
+                                                rated
+                                            </option>
+                                        </select>
+                                    </div>
+                                    <div id="recipient" class="md-6">
+                                        <label for="inputEmail"
+                                               class="form-label">Email</label>
+                                        <select class="form-select"
+                                                id="inputEmail">
+                                            {% for user in Users %}
+                                                <option style="color: green">{{ user.email }}</option>
+                                            {% endfor %}
+                                            <option style="color: green">None</option>
+                                        </select>
+                                    </div>
+                                </row>
+                                <hr/>
+                                <label for="performer"
+                                       class="form-label">Performer</label>
+                                <div id="recipient" class="col-6">
+                                    <label for="inputState"
+                                           class="form-label">Deadline</label>
+                                    <input class="form-control" type="text"
+                                           placeholder="{{ Workpackage.Deadline }}"
+                                           aria-label="Disabled input example"
+                                           disabled>
+                                </div>
+                                <div class="col-4">
+                                    <label for="inputState"
+                                           class="form-label"><b>Perfomer</b></label>
+                                    <input class="form-control" type="text"
+                                           placeholder="{{ Workpackage.Performer }}"
+                                           aria-label="Disabled input example"
+                                           disabled>
+                                </div>
+                                <div id="performer" class="col-6">
+                                    <label for="inputEmail"
+                                           class="form-label">Email</label>
+                                    <select id="inputState"
+                                            class="form-select"
+                                            id="inputEmail">
+                                        {% for user in users %}
+                                            <option style="color: green">{{ user.email }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="inputState"
+                                           class="form-label">Rating</label>
+                                    <select id="inputState"
+                                            class="form-select">
+                                        <option style="color: green">Grün
+                                        </option>
+                                        <option style="color: yellow">Gelb
+                                        </option>
+                                        <option style="color: red">Rot
+                                        </option>
+                                        <option style="color: grey"
+                                                selected="selected">Not
+                                            rated
+                                        </option>
+                                    </select>
+                                </div>
+                                <hr/>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="formFileMultiple"
+                                               class="form-label">Attachements</label>
+                                        <input class="form-control"
+                                               type="file"
+                                               id="formFileMultiple"
+                                               multiple>
+                                    </div>
+                                </div>
+                                {% if workpackage.performer_rating == 'Gelb' %}
+                                    <h1>Hello</h1>
+                                {% endif %}
+                                {% if workpackage.performer_rating == 'Rot' %}
+                                    <h1>Hello</h1>
+                                {% endif %}
+                                <div class="col-12">
+                                    <button type="submit"
+                                            class="btn btn-primary">Save
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button"
+                                    class="btn btn-secondary"
+                                    data-dismiss="modal">Close
+                            </button>
+                            <button type="button"
+                                    class="btn btn-primary">
+                                Save
+                                changes
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+{% endblock content %}

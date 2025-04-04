@@ -1,0 +1,274 @@
+{% extends 'Dashboard/index.html' %}
+
+{% block content %}
+    <title>MLA Overview</title>
+    <div>
+        <ul class="nav nav-tabs">
+
+            <li class="nav-item">
+                <a class="nav-link disabled btn-outline-secondary" href="#">Part A</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Part B</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Part C</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Part D</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Part E</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">PartF</a>
+            </li>
+        </ul>
+    </div>
+    <div class="d-flex flex-column flex-grow-0 p-3">
+        <div class="flex-container flex-flow-row flex-direction-row">
+            <div class="card" style="width: 26rem;">
+                <div class="card-body">
+                    <h5 class="card-title">MDS-Milestones</h5>
+                    <p class="card-text">Quality Gate 1: 10.10.2010</p>
+                    <p class="card-text">Quality Gate 2: 10.10.2010</p>
+                    <p class="card-text">Quality Gate 3: 10.10.2010</p>
+                    <p class="card-text">Quality Gate 4: 10.10.2010</p>
+                    <p class="card-text">Quality Gate 5: 10.10.2010</p>
+                    <p class="card-text">Quality Gate 6: 10.10.2010</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 26rem;">
+                <div class="card-body">
+                    <h5 class="card-title">CS-MLA Gates </h5>
+                    <p class="card-text">Part A: 6.6.2006</p>
+                    <p class="card-text">Part B: 7.7.2007</p>
+                    <p class="card-text">Part C: 8.8.2008</p>
+                    <p class="card-text">Part D: 9.9.2009</p>
+                    <p class="card-text">Part E: 10.10.2010</p>
+                    <p class="card-text">Part F: 11.11.2011</p>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Key Persons </h5>
+                     <p class="card-text">Developer: Developer 1</p>
+                    <p class="card-text">??</p>
+                </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body">
+                    <h5 class="card-title">Car Lines </h5>
+                    <p class="card-text outline">580</p>
+                    <p class="card-text">581</p>
+                </div>
+            </div>
+        </div>
+        <div class="flex-container flex-flow-row flex-direction-row">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Project - 46 Indicators</h5>
+                    <hr>
+                    <div>
+                        <canvas id="pie-1"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script style="width: 10em">
+                            const ctx6 = document.getElementById('pie-1');
+                            new Chart(ctx6, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: [
+                                        'Green',
+                                        'Yellow',
+                                        'Red',
+                                        'Grey'
+                                    ],
+                                    datasets: [{
+                                        label: [],
+                                        data: [12, 33, 3, 10],
+                                        backgroundColor: [
+                                            'rgb(54, 162, 35)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(252, 30, 0, 0.7)',
+                                            'rgb(100, 100, 100)'
+
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                }
+                            });
+                        </script>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 days ago</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-container flex-direction-column">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Top 3 Issues Project - Part B </h5>
+                        <hr>
+                        <div>
+                            <table class="table table-hover">
+                                <thead title="Top 3 Issues Vehicle Part B">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th scope="col">Issue</th>
+                                    <th scope="col">Measure</th>
+                                    <th scope="col">Due-Date</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row">B-BR1.1</th>
+                                    <td>Contact Person not named</td>
+                                    <td>Name contact person</td>
+                                    <td>12.12.2012</td>
+                                    <td>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">B-BR3</th>
+                                    <td>Overview CS relevant documents not available</td>
+                                    <td>Receive overview</td>
+                                    <td>12.12.2012</td>
+                                    <td>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">B-BM1.1</th>
+                                    <td>Candidates overview not received </td>
+                                    <td>Create final overview of review candidates</td>
+                                    <td>07.07.2007</td>
+                                    <td>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="flex-container flex-flow-row flex-direction-row">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Component - 43 ECUs</h5>
+                    <hr>
+                    <div>
+                        <canvas id="pie-2"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script style="width: 10em">
+                            const ctx2 = document.getElementById('pie-2');
+                            new Chart(ctx2, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: [
+                                        'Green',
+                                        'Yellow',
+                                        'Red',
+                                        'Grey'
+                                    ],
+                                    datasets: [{
+                                        label: [],
+                                        data: [33, 4, 1, 2],
+                                        backgroundColor: [
+                                            'rgb(54, 162, 35)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(252, 30, 0, 0.7)',
+                                            'rgb(100, 100, 100)'
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                }
+                            });
+                        </script>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 days ago</small></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flex-container flex-direction-column">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Top 3 Issues Components - Part B </h5>
+                        <hr>
+                        <div>
+                            <table class="table table-hover">
+                                <thead title="Top 3 Issues Vehicle Part B">
+                                <tr>
+                                    <th scope="col">ECU</th>
+                                    <th scope="col">Red Indicators</th>
+                                    <th scope="col">Open Measures</th>
+                                    <th scope="col">Escalations</th>
+                                    <th scope="col">Status</th>
+                                </tr>
+                                </thead>
+                                <tbody class="table-group-divider">
+                                <tr>
+                                    <th scope="row">Part 1</th>
+                                    <td>10</td>
+                                    <td>12</td>
+                                    <td>5</td>
+                                    <td>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Part 2</th>
+                                    <td>0</td>
+                                    <td>6</td>
+                                    <td>2</td>
+                                    <td>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Part 3</th>
+                                    <td>0</td>
+                                    <td>1</td>
+                                    <td>0</td>
+                                    <td>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="yellow"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+{% endblock content %}

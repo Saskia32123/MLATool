@@ -1,0 +1,1997 @@
+{% extends 'Dashboard/index.html' %}
+{% load static %}
+<body>
+{% block content %}
+    <div class="d-flex flex-column  p-3">
+        <div class="card-group">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ML-A</h5>
+                    <div>
+                        <canvas id="pie-1"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script style="width: 10em">
+                            const ctx = document.getElementById('pie-1');
+                            new Chart(ctx, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: [
+                                        'Red',
+                                        'Blue',
+                                        'Yellow'
+                                    ],
+                                    datasets: [{
+                                        label: 'Red',
+                                        data: [1, 100, 25],
+                                        backgroundColor: [
+                                            'rgb(252, 30, 0, 0.7)',
+                                            'rgb(54, 162, 35)',
+                                            'rgb(255, 205, 86)'
+
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                }
+                            });
+                        </script>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 15 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ML-B</h5>
+                    <div>
+                        <canvas id="pie-2"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script style="width: 10em">
+                            const ctx2 = document.getElementById('pie-2');
+                            new Chart(ctx2, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: [
+                                        'Red',
+                                        'Blue',
+                                        'Yellow'
+                                    ],
+                                    datasets: [{
+                                        label: 'Red',
+                                        data: [79, 50, 50],
+                                        backgroundColor: [
+                                            'rgb(252, 30, 0, 0.7)',
+                                            'rgb(54, 162, 35)',
+                                            'rgb(255, 205, 86)'
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                }
+                            });
+                        </script>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins
+                            ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ML-C</h5>
+                    <div>
+                        <canvas id="pie-3"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script style="width: 10em">
+                            const ctx3 = document.getElementById('pie-3');
+                            new Chart(ctx3, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: [
+                                        'Red',
+                                        'Blue',
+                                        'Yellow'
+                                    ],
+                                    datasets: [{
+                                        label: 'Red',
+                                        data: [19, 10, 10, 100],
+                                        backgroundColor: [
+                                            'rgb(252, 30, 0, 0.7)',
+                                            'rgb(54, 162, 35)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(100, 100, 100)'
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                }
+                            });
+                        </script>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 100 mins
+                            ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ML-D</h5>
+                    <div>
+                        <canvas id="pie-4"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script style="width: 10em">
+                            const ctx4 = document.getElementById('pie-4');
+                            new Chart(ctx4, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: [
+                                        'Red',
+                                        'Green',
+                                        'Yellow',
+                                        'Not rated'
+                                    ],
+                                    datasets: [{
+                                        label: 'Red',
+                                        data: [0, 1, 1, 100],
+                                        backgroundColor: [
+                                            'rgb(252, 30, 0, 0.7)',
+                                            'rgb(54, 162, 35)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(100, 100, 100)'
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                }
+                            });
+                        </script>
+                        <p class="card-text"><small class="text-body-secondary">Last updated 10 hours
+                            ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ML-E</h5>
+                    <div>
+                        <canvas id="pie-5"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script style="width: 10em">
+                            const ctx5 = document.getElementById('pie-5');
+                            new Chart(ctx5, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: [
+                                        'Red',
+                                        'Blue',
+                                        'Yellow'
+                                    ],
+                                    datasets: [{
+                                        label: 'Red',
+                                        data: [0, 0, 0, 100],
+                                        backgroundColor: [
+                                            'rgb(252, 30, 0, 0.7)',
+                                            'rgb(54, 162, 35)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(100, 100, 100)'
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                }
+                            });
+                        </script>
+                        <p class="card-text"><small class="text-body-secondary">Not updated yet
+                            ago</small></p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">ML-F</h5>
+                    <div>
+                        <canvas id="pie-6"></canvas>
+                    </div>
+                    <div class="chart-container">
+                        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+                        <script style="width: 10em">
+                            const ctx6 = document.getElementById('pie-6');
+                            new Chart(ctx6, {
+                                type: 'doughnut',
+                                data: {
+                                    labels: [
+                                        'Red',
+                                        'Blue',
+                                        'Yellow',
+                                        'Grey'
+                                    ],
+                                    datasets: [{
+                                        label: 'Red',
+                                        data: [0, 0, 0, 100],
+                                        backgroundColor: [
+                                            'rgb(252, 30, 0, 0.7)',
+                                            'rgb(54, 162, 35)',
+                                            'rgb(255, 205, 86)',
+                                            'rgb(100, 100, 100)'
+                                        ],
+                                        hoverOffset: 4
+                                    }]
+                                }
+                            });
+                        </script>
+                        <p class="card-text"><small class="text-body-secondary">Not updated yet
+                            ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-column flex-grow-0 p-3">
+        <div class="card">
+            <div class="card-body">
+                <h2>
+                    Indicators Vehicle
+                </h2>
+                <div class="card card-timeline px-2 border">
+                    <h5 class="text-center"><b>Project 1</b></h5>
+                    <ul class="bs4-order-tracking">
+                        <li class="step active">
+                            <div>A</div>
+                            05.05.05
+                        </li>
+                        <li class="step active">
+                            <div>B</div>
+                            06.06.06
+                        </li>
+                        <li color="#dc3545" class="step">
+                            <div>C</div>
+                            07.07.07
+                        </li>
+                        <li class="step ">
+                            <div>D</div>
+                            08.08.08
+                        </li>
+                        <li class="step ">
+                            <div>E</div>
+                            08.08.08
+                        </li>
+                        <li class="step ">
+                            <div>F</div>
+                            08.08.08
+                        </li>
+                    </ul>
+                </div>
+                <hr/>
+                <div class="accordion-body">
+                    <input type="checkbox" class="btn-check" name="btnradio" id="cl-btnradio1" autocomplete="off"
+                           checked>
+                    <label class="btn btn-outline-info" for="cl-btnradio1">580</label>
+
+                    <input type="checkbox" class="btn-check" name="btnradio" id="cl-btnradio2" autocomplete="off">
+                    <label class="btn btn-outline-info" for="cl-btnradio2">581</label>
+                </div>
+                <div class="accordion-body">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#ML-A"
+                                    type="button" role="tab" aria-controls="ML-A" aria-selected="true">ML-A
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-profile" type="button" role="tab" aria-controls="ML-B"
+                                    aria-selected="false">ML-B
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#ML-C"
+                                    type="button" role="tab" aria-controls="ML-C" aria-selected="true">ML-C
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#ML-D"
+                                    type="button" role="tab" aria-controls="ML-D" aria-selected="true">ML-D
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#ML-E"
+                                    type="button" role="tab" aria-controls="ML-E" aria-selected="true">ML-E
+                            </button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-home-tab" data-bs-toggle="pill"
+                                    data-bs-target="#ML-F"
+                                    type="button" role="tab" aria-controls="ML-F" aria-selected="true">ML-F
+                            </button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade" id="ML-A" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="flex justify-between gap-3 my-3">
+                                <div class="list-group">
+                                    {% for workpackage in Workpackages %}
+                                        {% if workpackage.rg_area == 'RG_A' %}
+                                            <div class="d-flex list-group-item list-group-item-action">
+                                                <div class="p-2 col-md-1">
+                                                    {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                        <p class="p-2 col-md-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                 height="16"
+                                                                 fill="red"
+                                                                 style="border: 1px solid black; border-radius: 50%"
+                                                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                <circle cx="8" cy="8" r="8"></circle>
+                                                            </svg>
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                        <p class="p-2 col-md-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                 height="16"
+                                                                 fill="yellow"
+                                                                 style="border: 1px solid black; border-radius: 50%"
+                                                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                <circle cx="8" cy="8" r="8"></circle>
+                                                            </svg>
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                                        <p class="p-2 col-md-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                 height="16"
+                                                                 fill="green"
+                                                                 style="border: 1px solid black; border-radius: 50%"
+                                                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                <circle cx="8" cy="8" r="8"></circle>
+                                                            </svg>
+                                                        </p>
+                                                    {% endif %}
+                                                    {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                                        <p class="p-2 col-md-2">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                                 height="16"
+                                                                 fill="grey"
+                                                                 style="border: 1px solid black; border-radius: 50%"
+                                                                 class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                                <circle cx="8" cy="8" r="8"></circle>
+                                                            </svg>
+                                                        </p>
+                                                    {% endif %}
+                                                </div>
+                                                <p class="p-2 col-md-1">
+                                                    <button class="btn" disabled>{{ workpackage.id }}</button>
+                                                </p>
+                                                <p class="p-2 col-md-5">{{ workpackage.kpi }}</p>
+                                                <p class="p-2 col-md-1"> {{ workpackage.rg_area }}</p>
+                                                <p class="p-2 col-md-2">
+                                                    <button class="btn"
+                                                            disabled>{{ workpackage.recipient }}</button>
+                                                </p>
+                                                <!-- Button trigger modal -->
+                                                <p>
+                                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                            data-bs-target="#exampleModal">
+                                                        Launch demo modal
+                                                    </button>
+                                                </p>
+
+
+                                                <!-- Modal -->
+                                                <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                        <div class="modal-content" style="width:200%">
+                                                            <div class="modal-header">
+                                                                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                    Modal title</h1>
+                                                                <button type="button" class="btn-close"
+                                                                        data-bs-dismiss="modal"
+                                                                        aria-label="Close"></button>
+                                                            </div>
+                                                            <div class="modal-body">
+                                                                <form>
+                                                                    <div class="modal-body">
+                                                                        <div class="container-fluid">
+                                                                            <div class="col-md-12 ">
+
+                                                                                {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                                                    <p class="p-2 col-md-2 circle red">
+                                                                                    </p>
+                                                                                {% endif %}
+                                                                                {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                                                    <p class="p-2 col-md-2 circle yellow">
+                                                                                    </p>
+                                                                                {% endif %}
+                                                                                {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                                                                    <p class="p-2 col-md-2 circle green">
+                                                                                    </p>
+                                                                                {% endif %}
+                                                                                {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                                                                    <p class="p-2 col-md-2 circle grey">
+                                                                                    </p>
+                                                                                {% endif %}
+                                                                                <label for="inputState"
+                                                                                       class="col-md-2 form-label"><b>
+                                                                                    Total Rating</b></label>
+                                                                                <br/>
+
+                                                                            </div>
+                                                                        </div>
+                                                                        <hr/>
+                                                                        <div>
+                                                                            <div class="col-md-4 ml-auto">
+                                                                                <label for="inputState"
+                                                                                       class="form-label"><b>Recipient</b></label>
+                                                                                <input class="form-control"
+                                                                                       type="text"
+                                                                                       placeholder="{{ workpackage.Recipient }}"
+                                                                                       aria-label="Disabled input example"
+                                                                                       disabled>
+                                                                            </div>
+                                                                            <div class="md-4">
+                                                                                <label for="inputState"
+                                                                                       class="form-label">Rating</label>
+                                                                                <select id="inputState"
+                                                                                        class="form-select">
+                                                                                    <option style="color: green">
+                                                                                        Grün
+                                                                                    </option>
+                                                                                    <option style="color: yellow">
+                                                                                        Gelb
+                                                                                    </option>
+                                                                                    <option style="color: red">Rot
+                                                                                    </option>
+                                                                                    <option style="color: grey"
+                                                                                            selected="selected">Not
+                                                                                        rated
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <div id="recipient" class="md-6">
+                                                                                <label for="inputEmail"
+                                                                                       class="form-label">Email</label>
+                                                                                <select class="form-select"
+                                                                                        id="inputEmail">
+                                                                                    {% for user in Users %}
+                                                                                        <option style="color: green">{{ user.email }}</option>
+                                                                                    {% endfor %}
+                                                                                    <option style="color: green">
+                                                                                        None
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                            <hr/>
+                                                                            <div class="col-4">
+                                                                                <label for="inputState"
+                                                                                       class="form-label"><b>Deadline</b></label>
+                                                                                <input class="form-control" type="text"
+                                                                                       placeholder="15.2.2026"
+                                                                                       aria-label="Disabled input example"
+                                                                                       disabled>
+                                                                                <div id="performer" class="col-6">
+                                                                                    <label for="inputEmail"
+                                                                                           class="form-label">Email</label>
+                                                                                    <select id="inputState"
+                                                                                            class="form-select"
+                                                                                            id="inputEmail">
+                                                                                        {% for user in Users %}
+                                                                                            <option style="color: orange">
+                                                                                                carlinecoordinator1@mercedes-benz.com
+                                                                                            </option>
+                                                                                            <option style="color: orange">
+                                                                                                carlinecoordinator2@mercedes-benz.com
+                                                                                            </option>
+                                                                                            <option style="color: orange">
+                                                                                                carlinecoordinator3@mercedes-benz.com
+                                                                                            </option>
+                                                                                        {% endfor %}
+                                                                                    </select>
+                                                                                </div>
+                                                                                <div>
+                                                                                    <label class="form-label">Rating</label>
+                                                                                    <select id="inputState"
+                                                                                            class="form-select">
+                                                                                        <option style="color: green">
+                                                                                            Grün
+                                                                                        </option>
+                                                                                        <option style="color: yellow">
+                                                                                            Gelb
+                                                                                        </option>
+                                                                                        <option style="color: red">Rot
+                                                                                        </option>
+                                                                                        <option style="color: grey"
+                                                                                                selected="selected">Not
+                                                                                            rated
+                                                                                        </option>
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <hr/>
+                                                                        <div>
+                                                                            <div class="col-12">
+                                                                                <div class="mb-3">
+                                                                                    <label for="formFileMultiple"
+                                                                                           class="form-label">Attachements</label>
+                                                                                    <input class="form-control"
+                                                                                           type="file"
+                                                                                           id="formFileMultiple"
+                                                                                           multiple>
+                                                                                </div>
+                                                                            </div>
+                                                                            <label for="url">Link:</label>
+                                                                            <input
+                                                                                    type="url"
+                                                                                    name="url"
+                                                                                    id="url"
+                                                                                    placeholder="https://example.com"
+                                                                                    pattern="www://.*"
+                                                                                    size="30"
+                                                                                    required/>
+
+                                                                            {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                                                <div class="col-12">
+                                                                                    <div class="mb-3">
+                                                                                        <div id="performer"
+                                                                                             class="col-6">
+                                                                                            <label for="inputEmail"
+                                                                                                   class="form-label">Responsible</label>
+                                                                                            <input type="text"
+                                                                                                   id="fname"
+                                                                                                   name="fname"><br><br>
+                                                                                            <select id="inputState"
+                                                                                                    class="form-select"
+                                                                                                    id="inputEmail">
+                                                                                                {% for user in Users %}
+                                                                                                    <option style="color: green">{{ user.email }}</option>
+                                                                                                {% endfor %}
+                                                                                            </select>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            {% endif %}
+
+                                                                            {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                                                <br>
+                                                                                <br>
+                                                                            {% endif %}
+                                                                        </div>
+                                                                </form>
+                                                            </div>
+                                                            <div class="modal-footer">
+                                                                <button type="button" class="btn btn-secondary"
+                                                                        data-bs-dismiss="modal">Close
+                                                                </button>
+                                                                <button type="button" class="btn btn-primary">
+                                                                    Save
+                                                                    changes
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <p>
+                                                <button type="button" class="btn btn-info">
+                                                    <a href="mailto:recipient@mercedes-benz.com?cc=CarlineCoordinator@mercedes-benz.com&subject=Rating for {{ workpackage.WP_ID }} not yet received"
+                                                       color="white">Send
+                                                        Email</a>
+                                                </button>
+                                            </p>
+
+                                            </div>
+                                        {% endif %}
+                                    {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="ML-B" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <div class="flex justify-between gap-3 my-3">
+                            <div class="list-group">
+                                {% for workpackage in Workpackages %}
+                                    {% if workpackage.rg_area == 'RG_B' %}
+                                        <div class="d-flex list-group-item list-group-item-action">
+                                            <div class="p-2 col-md-1">
+                                                {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                    <p class="p-2 col-md-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                             height="16"
+                                                             fill="red"
+                                                             style="border: 1px solid black; border-radius: 50%"
+                                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                            <circle cx="8" cy="8" r="8"></circle>
+                                                        </svg>
+                                                    </p>
+                                                {% endif %}
+                                                {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                    <p class="p-2 col-md-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                             height="16"
+                                                             fill="yellow"
+                                                             style="border: 1px solid black; border-radius: 50%"
+                                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                            <circle cx="8" cy="8" r="8"></circle>
+                                                        </svg>
+                                                    </p>
+                                                {% endif %}
+                                                {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                                    <p class="p-2 col-md-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                             height="16"
+                                                             fill="green"
+                                                             style="border: 1px solid black; border-radius: 50%"
+                                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                            <circle cx="8" cy="8" r="8"></circle>
+                                                        </svg>
+                                                    </p>
+                                                {% endif %}
+                                                {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                                    <p class="p-2 col-md-2">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                             height="16"
+                                                             fill="grey"
+                                                             style="border: 1px solid black; border-radius: 50%"
+                                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                            <circle cx="8" cy="8" r="8"></circle>
+                                                        </svg>
+                                                    </p>
+                                                {% endif %}
+                                            </div>
+                                            <p class="p-2 col-md-1">
+                                                <button class="btn" disabled>{{ workpackage.id }}</button>
+                                            </p>
+                                            <p class="p-2 col-md-5">{{ workpackage.kpi }}</p>
+                                            <p class="p-2 col-md-1"> {{ workpackage.rg_area }}</p>
+                                            <p class="p-2 col-md-2">
+                                                <button class="btn"
+                                                        disabled>{{ workpackage.recipient }}</button>
+                                            </p>
+                                            <!-- Button trigger modal -->
+                                            <p>
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                        data-bs-target="#exampleModal">
+                                                    Launch demo modal
+                                                </button>
+                                            </p>
+
+
+                                            <!-- Modal -->
+                                            <div class="modal fade" id="exampleModal" tabindex="-1"
+                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content" style="width:200%">
+                                                        <div class="modal-header">
+                                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                                Modal title</h1>
+                                                            <button type="button" class="btn-close"
+                                                                    data-bs-dismiss="modal"
+                                                                    aria-label="Close"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <form>
+                                                                <div class="modal-body">
+                                                                    <div class="container-fluid">
+                                                                        <div class="col-md-12 ">
+
+                                                                            {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                                                <p class="p-2 col-md-2 circle red">
+                                                                                </p>
+                                                                            {% endif %}
+                                                                            {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                                                <p class="p-2 col-md-2 circle yellow">
+                                                                                </p>
+                                                                            {% endif %}
+                                                                            {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                                                                <p class="p-2 col-md-2 circle green">
+                                                                                </p>
+                                                                            {% endif %}
+                                                                            {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                                                                <p class="p-2 col-md-2 circle grey">
+                                                                                </p>
+                                                                            {% endif %}
+                                                                            <label for="inputState"
+                                                                                   class="col-md-2 form-label"><b>
+                                                                                Total Rating</b></label>
+                                                                            <br/>
+
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr/>
+                                                                    <div>
+                                                                        <div class="col-md-4 ml-auto">
+                                                                            <label for="inputState"
+                                                                                   class="form-label"><b>Recipient</b></label>
+                                                                            <input class="form-control"
+                                                                                   type="text"
+                                                                                   placeholder="{{ workpackage.Recipient }}"
+                                                                                   aria-label="Disabled input example"
+                                                                                   disabled>
+                                                                        </div>
+                                                                        <div class="md-4">
+                                                                            <label for="inputState"
+                                                                                   class="form-label">Rating</label>
+                                                                            <select id="inputState"
+                                                                                    class="form-select">
+                                                                                <option style="color: green">
+                                                                                    Grün
+                                                                                </option>
+                                                                                <option style="color: yellow">
+                                                                                    Gelb
+                                                                                </option>
+                                                                                <option style="color: red">Rot
+                                                                                </option>
+                                                                                <option style="color: grey"
+                                                                                        selected="selected">Not
+                                                                                    rated
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div id="recipient" class="md-6">
+                                                                            <label for="inputEmail"
+                                                                                   class="form-label">Email</label>
+                                                                            <select class="form-select"
+                                                                                    id="inputEmail">
+                                                                                {% for user in Users %}
+                                                                                    <option style="color: green">{{ user.email }}</option>
+                                                                                {% endfor %}
+                                                                                <option style="color: green">
+                                                                                    None
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <hr/>
+                                                                        <div class="col-4">
+                                                                            <label for="inputState"
+                                                                                   class="form-label"><b>Deadline</b></label>
+                                                                            <input class="form-control" type="text"
+                                                                                   placeholder="15.2.2026"
+                                                                                   aria-label="Disabled input example"
+                                                                                   disabled>
+                                                                            <div id="performer" class="col-6">
+                                                                                <label for="inputEmail"
+                                                                                       class="form-label">Email</label>
+                                                                                <select id="inputState"
+                                                                                        class="form-select"
+                                                                                        id="inputEmail">
+                                                                                    {% for user in Users %}
+                                                                                        <option style="color: orange">
+                                                                                            carlinecoordinator1@mercedes-benz.com
+                                                                                        </option>
+                                                                                        <option style="color: orange">
+                                                                                            carlinecoordinator2@mercedes-benz.com
+                                                                                        </option>
+                                                                                        <option style="color: orange">
+                                                                                            carlinecoordinator3@mercedes-benz.com
+                                                                                        </option>
+                                                                                    {% endfor %}
+                                                                                </select>
+                                                                            </div>
+                                                                            <div>
+                                                                                <label class="form-label">Rating</label>
+                                                                                <select id="inputState"
+                                                                                        class="form-select">
+                                                                                    <option style="color: green">
+                                                                                        Grün
+                                                                                    </option>
+                                                                                    <option style="color: yellow">
+                                                                                        Gelb
+                                                                                    </option>
+                                                                                    <option style="color: red">Rot
+                                                                                    </option>
+                                                                                    <option style="color: grey"
+                                                                                            selected="selected">Not
+                                                                                        rated
+                                                                                    </option>
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <hr/>
+                                                                    <div>
+                                                                        <div class="col-12">
+                                                                            <div class="mb-3">
+                                                                                <label for="formFileMultiple"
+                                                                                       class="form-label">Attachements</label>
+                                                                                <input class="form-control"
+                                                                                       type="file"
+                                                                                       id="formFileMultiple"
+                                                                                       multiple>
+                                                                            </div>
+                                                                        </div>
+                                                                        <label for="url">Link:</label>
+                                                                        <input
+                                                                                type="url"
+                                                                                name="url"
+                                                                                id="url"
+                                                                                placeholder="https://example.com"
+                                                                                pattern="www://.*"
+                                                                                size="30"
+                                                                                required/>
+
+                                                                        {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                                            <div class="col-12">
+                                                                                <div class="mb-3">
+                                                                                    <div id="performer"
+                                                                                         class="col-6">
+                                                                                        <label for="inputEmail"
+                                                                                               class="form-label">Responsible</label>
+                                                                                        <input type="text"
+                                                                                               id="fname"
+                                                                                               name="fname"><br><br>
+                                                                                        <select id="inputState"
+                                                                                                class="form-select"
+                                                                                                id="inputEmail">
+                                                                                            {% for user in Users %}
+                                                                                                <option style="color: green">{{ user.email }}</option>
+                                                                                            {% endfor %}
+                                                                                        </select>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        {% endif %}
+
+                                                                        {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                                            <br>
+                                                                            <br>
+                                                                        {% endif %}
+                                                                    </div>
+                                                            </form>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-secondary"
+                                                                    data-bs-dismiss="modal">Close
+                                                            </button>
+                                                            <button type="button" class="btn btn-primary">
+                                                                Save
+                                                                changes
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <p>
+                                            <button type="button" class="btn btn-info">
+                                                <a href="mailto:recipient@mercedes-benz.com?cc=CarlineCoordinator@mercedes-benz.com&subject=Rating for {{ workpackage.WP_ID }} not yet received"
+                                                   color="white">Send
+                                                    Email</a>
+                                            </button>
+                                        </p>
+
+                                        </div>
+                                    {% endif %}
+                                {% endfor %}
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="ML-C" role="tabpanel" aria-labelledby="pills-home-tab">
+                    <div class="flex justify-between gap-3 my-3">
+                        <div class="list-group">
+                            {% for workpackage in Workpackages %}
+                                {% if workpackage.rg_area == 'RG_C' %}
+                                    <div class="d-flex list-group-item list-group-item-action">
+                                        <div class="p-2 col-md-1">
+                                            {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                <p class="p-2 col-md-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                         height="16"
+                                                         fill="red"
+                                                         style="border: 1px solid black; border-radius: 50%"
+                                                         class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                        <circle cx="8" cy="8" r="8"></circle>
+                                                    </svg>
+                                                </p>
+                                            {% endif %}
+                                            {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                <p class="p-2 col-md-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                         height="16"
+                                                         fill="yellow"
+                                                         style="border: 1px solid black; border-radius: 50%"
+                                                         class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                        <circle cx="8" cy="8" r="8"></circle>
+                                                    </svg>
+                                                </p>
+                                            {% endif %}
+                                            {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                                <p class="p-2 col-md-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                         height="16"
+                                                         fill="green"
+                                                         style="border: 1px solid black; border-radius: 50%"
+                                                         class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                        <circle cx="8" cy="8" r="8"></circle>
+                                                    </svg>
+                                                </p>
+                                            {% endif %}
+                                            {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                                <p class="p-2 col-md-2">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                         height="16"
+                                                         fill="grey"
+                                                         style="border: 1px solid black; border-radius: 50%"
+                                                         class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                        <circle cx="8" cy="8" r="8"></circle>
+                                                    </svg>
+                                                </p>
+                                            {% endif %}
+                                        </div>
+                                        <p class="p-2 col-md-1">
+                                            <button class="btn" disabled>{{ workpackage.id }}</button>
+                                        </p>
+                                        <p class="p-2 col-md-5">{{ workpackage.kpi }}</p>
+                                        <p class="p-2 col-md-1"> {{ workpackage.rg_area }}</p>
+                                        <p class="p-2 col-md-2">
+                                            <button class="btn"
+                                                    disabled>{{ workpackage.recipient }}</button>
+                                        </p>
+                                        <!-- Button trigger modal -->
+                                        <p>
+                                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                    data-bs-target="#exampleModal">
+                                                Launch demo modal
+                                            </button>
+                                        </p>
+
+
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModal" tabindex="-1"
+                                             aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                            <div class="modal-dialog">
+                                                <div class="modal-content" style="width:200%">
+                                                    <div class="modal-header">
+                                                        <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                            Modal title</h1>
+                                                        <button type="button" class="btn-close"
+                                                                data-bs-dismiss="modal"
+                                                                aria-label="Close"></button>
+                                                    </div>
+                                                    <div class="modal-body">
+                                                        <form>
+                                                            <div class="modal-body">
+                                                                <div class="container-fluid">
+                                                                    <div class="col-md-12 ">
+
+                                                                        {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                                            <p class="p-2 col-md-2 circle red">
+                                                                            </p>
+                                                                        {% endif %}
+                                                                        {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                                            <p class="p-2 col-md-2 circle yellow">
+                                                                            </p>
+                                                                        {% endif %}
+                                                                        {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                                                            <p class="p-2 col-md-2 circle green">
+                                                                            </p>
+                                                                        {% endif %}
+                                                                        {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                                                            <p class="p-2 col-md-2 circle grey">
+                                                                            </p>
+                                                                        {% endif %}
+                                                                        <label for="inputState"
+                                                                               class="col-md-2 form-label"><b>
+                                                                            Total Rating</b></label>
+                                                                        <br/>
+
+                                                                    </div>
+                                                                </div>
+                                                                <hr/>
+                                                                <div>
+                                                                    <div class="col-md-4 ml-auto">
+                                                                        <label for="inputState"
+                                                                               class="form-label"><b>Recipient</b></label>
+                                                                        <input class="form-control"
+                                                                               type="text"
+                                                                               placeholder="{{ workpackage.Recipient }}"
+                                                                               aria-label="Disabled input example"
+                                                                               disabled>
+                                                                    </div>
+                                                                    <div class="md-4">
+                                                                        <label for="inputState"
+                                                                               class="form-label">Rating</label>
+                                                                        <select id="inputState"
+                                                                                class="form-select">
+                                                                            <option style="color: green">
+                                                                                Grün
+                                                                            </option>
+                                                                            <option style="color: yellow">
+                                                                                Gelb
+                                                                            </option>
+                                                                            <option style="color: red">Rot
+                                                                            </option>
+                                                                            <option style="color: grey"
+                                                                                    selected="selected">Not
+                                                                                rated
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div id="recipient" class="md-6">
+                                                                        <label for="inputEmail"
+                                                                               class="form-label">Email</label>
+                                                                        <select class="form-select"
+                                                                                id="inputEmail">
+                                                                            {% for user in Users %}
+                                                                                <option style="color: green">{{ user.email }}</option>
+                                                                            {% endfor %}
+                                                                            <option style="color: green">
+                                                                                None
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <hr/>
+                                                                    <div class="col-4">
+                                                                        <label for="inputState"
+                                                                               class="form-label"><b>Deadline</b></label>
+                                                                        <input class="form-control" type="text"
+                                                                               placeholder="15.2.2026"
+                                                                               aria-label="Disabled input example"
+                                                                               disabled>
+                                                                        <div id="performer" class="col-6">
+                                                                            <label for="inputEmail"
+                                                                                   class="form-label">Email</label>
+                                                                            <select id="inputState"
+                                                                                    class="form-select"
+                                                                                    id="inputEmail">
+                                                                                {% for user in Users %}
+                                                                                    <option style="color: orange">
+                                                                                        carlinecoordinator1@mercedes-benz.com
+                                                                                    </option>
+                                                                                    <option style="color: orange">
+                                                                                        carlinecoordinator2@mercedes-benz.com
+                                                                                    </option>
+                                                                                    <option style="color: orange">
+                                                                                        carlinecoordinator3@mercedes-benz.com
+                                                                                    </option>
+                                                                                {% endfor %}
+                                                                            </select>
+                                                                        </div>
+                                                                        <div>
+                                                                            <label class="form-label">Rating</label>
+                                                                            <select id="inputState"
+                                                                                    class="form-select">
+                                                                                <option style="color: green">
+                                                                                    Grün
+                                                                                </option>
+                                                                                <option style="color: yellow">
+                                                                                    Gelb
+                                                                                </option>
+                                                                                <option style="color: red">Rot
+                                                                                </option>
+                                                                                <option style="color: grey"
+                                                                                        selected="selected">Not
+                                                                                    rated
+                                                                                </option>
+                                                                            </select>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <hr/>
+                                                                <div>
+                                                                    <div class="col-12">
+                                                                        <div class="mb-3">
+                                                                            <label for="formFileMultiple"
+                                                                                   class="form-label">Attachements</label>
+                                                                            <input class="form-control"
+                                                                                   type="file"
+                                                                                   id="formFileMultiple"
+                                                                                   multiple>
+                                                                        </div>
+                                                                    </div>
+                                                                    <label for="url">Link:</label>
+                                                                    <input
+                                                                            type="url"
+                                                                            name="url"
+                                                                            id="url"
+                                                                            placeholder="https://example.com"
+                                                                            pattern="www://.*"
+                                                                            size="30"
+                                                                            required/>
+
+                                                                    {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                                        <div class="col-12">
+                                                                            <div class="mb-3">
+                                                                                <div id="performer"
+                                                                                     class="col-6">
+                                                                                    <label for="inputEmail"
+                                                                                           class="form-label">Responsible</label>
+                                                                                    <input type="text"
+                                                                                           id="fname"
+                                                                                           name="fname"><br><br>
+                                                                                    <select id="inputState"
+                                                                                            class="form-select"
+                                                                                            id="inputEmail">
+                                                                                        {% for user in Users %}
+                                                                                            <option style="color: green">{{ user.email }}</option>
+                                                                                        {% endfor %}
+                                                                                    </select>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    {% endif %}
+
+                                                                    {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                                        <br>
+                                                                        <br>
+                                                                    {% endif %}
+                                                                </div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-secondary"
+                                                                data-bs-dismiss="modal">Close
+                                                        </button>
+                                                        <button type="button" class="btn btn-primary">
+                                                            Save
+                                                            changes
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p>
+                                        <button type="button" class="btn btn-info">
+                                            <a href="mailto:recipient@mercedes-benz.com?cc=CarlineCoordinator@mercedes-benz.com&subject=Rating for {{ workpackage.WP_ID }} not yet received"
+                                               color="white">Send
+                                                Email</a>
+                                        </button>
+                                    </p>
+
+                                    </div>
+                                {% endif %}
+                            {% endfor %}
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="ML-D" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="flex justify-between gap-3 my-3">
+                    <div class="list-group">
+                        {% for workpackage in Workpackages %}
+                            {% if workpackage.rg_area == 'RG_D' %}
+                                <div class="d-flex list-group-item list-group-item-action">
+                                    <div class="p-2 col-md-1">
+                                        {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                            <p class="p-2 col-md-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                     height="16"
+                                                     fill="red"
+                                                     style="border: 1px solid black; border-radius: 50%"
+                                                     class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                    <circle cx="8" cy="8" r="8"></circle>
+                                                </svg>
+                                            </p>
+                                        {% endif %}
+                                        {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                            <p class="p-2 col-md-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                     height="16"
+                                                     fill="yellow"
+                                                     style="border: 1px solid black; border-radius: 50%"
+                                                     class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                    <circle cx="8" cy="8" r="8"></circle>
+                                                </svg>
+                                            </p>
+                                        {% endif %}
+                                        {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                            <p class="p-2 col-md-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                     height="16"
+                                                     fill="green"
+                                                     style="border: 1px solid black; border-radius: 50%"
+                                                     class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                    <circle cx="8" cy="8" r="8"></circle>
+                                                </svg>
+                                            </p>
+                                        {% endif %}
+                                        {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                            <p class="p-2 col-md-2">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                                     height="16"
+                                                     fill="grey"
+                                                     style="border: 1px solid black; border-radius: 50%"
+                                                     class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                                    <circle cx="8" cy="8" r="8"></circle>
+                                                </svg>
+                                            </p>
+                                        {% endif %}
+                                    </div>
+                                    <p class="p-2 col-md-1">
+                                        <button class="btn" disabled>{{ workpackage.id }}</button>
+                                    </p>
+                                    <p class="p-2 col-md-5">{{ workpackage.kpi }}</p>
+                                    <p class="p-2 col-md-1"> {{ workpackage.rg_area }}</p>
+                                    <p class="p-2 col-md-2">
+                                        <button class="btn"
+                                                disabled>{{ workpackage.recipient }}</button>
+                                    </p>
+                                    <!-- Button trigger modal -->
+                                    <p>
+                                        <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                                data-bs-target="#exampleModal">
+                                            Launch demo modal
+                                        </button>
+                                    </p>
+
+
+                                    <!-- Modal -->
+                                    <div class="modal fade" id="exampleModal" tabindex="-1"
+                                         aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                        <div class="modal-dialog">
+                                            <div class="modal-content" style="width:200%">
+                                                <div class="modal-header">
+                                                    <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                        Modal title</h1>
+                                                    <button type="button" class="btn-close"
+                                                            data-bs-dismiss="modal"
+                                                            aria-label="Close"></button>
+                                                </div>
+                                                <div class="modal-body">
+                                                    <form>
+                                                        <div class="modal-body">
+                                                            <div class="container-fluid">
+                                                                <div class="col-md-12 ">
+
+                                                                    {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                                        <p class="p-2 col-md-2 circle red">
+                                                                        </p>
+                                                                    {% endif %}
+                                                                    {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                                        <p class="p-2 col-md-2 circle yellow">
+                                                                        </p>
+                                                                    {% endif %}
+                                                                    {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                                                        <p class="p-2 col-md-2 circle green">
+                                                                        </p>
+                                                                    {% endif %}
+                                                                    {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                                                        <p class="p-2 col-md-2 circle grey">
+                                                                        </p>
+                                                                    {% endif %}
+                                                                    <label for="inputState"
+                                                                           class="col-md-2 form-label"><b>
+                                                                        Total Rating</b></label>
+                                                                    <br/>
+
+                                                                </div>
+                                                            </div>
+                                                            <hr/>
+                                                            <div>
+                                                                <div class="col-md-4 ml-auto">
+                                                                    <label for="inputState"
+                                                                           class="form-label"><b>Recipient</b></label>
+                                                                    <input class="form-control"
+                                                                           type="text"
+                                                                           placeholder="{{ workpackage.Recipient }}"
+                                                                           aria-label="Disabled input example"
+                                                                           disabled>
+                                                                </div>
+                                                                <div class="md-4">
+                                                                    <label for="inputState"
+                                                                           class="form-label">Rating</label>
+                                                                    <select id="inputState"
+                                                                            class="form-select">
+                                                                        <option style="color: green">
+                                                                            Grün
+                                                                        </option>
+                                                                        <option style="color: yellow">
+                                                                            Gelb
+                                                                        </option>
+                                                                        <option style="color: red">Rot
+                                                                        </option>
+                                                                        <option style="color: grey"
+                                                                                selected="selected">Not
+                                                                            rated
+                                                                        </option>
+                                                                    </select>
+                                                                </div>
+                                                                <div id="recipient" class="md-6">
+                                                                    <label for="inputEmail"
+                                                                           class="form-label">Email</label>
+                                                                    <select class="form-select"
+                                                                            id="inputEmail">
+                                                                        {% for user in Users %}
+                                                                            <option style="color: green">{{ user.email }}</option>
+                                                                        {% endfor %}
+                                                                        <option style="color: green">
+                                                                            None
+                                                                        </option>
+                                                                    </select>
+                                                                </div>
+                                                                <hr/>
+                                                                <div class="col-4">
+                                                                    <label for="inputState"
+                                                                           class="form-label"><b>Deadline</b></label>
+                                                                    <input class="form-control" type="text"
+                                                                           placeholder="15.2.2026"
+                                                                           aria-label="Disabled input example"
+                                                                           disabled>
+                                                                    <div id="performer" class="col-6">
+                                                                        <label for="inputEmail"
+                                                                               class="form-label">Email</label>
+                                                                        <select id="inputState"
+                                                                                class="form-select"
+                                                                                id="inputEmail">
+                                                                            {% for user in Users %}
+                                                                                <option style="color: orange">
+                                                                                    carlinecoordinator1@mercedes-benz.com
+                                                                                </option>
+                                                                                <option style="color: orange">
+                                                                                    carlinecoordinator2@mercedes-benz.com
+                                                                                </option>
+                                                                                <option style="color: orange">
+                                                                                    carlinecoordinator3@mercedes-benz.com
+                                                                                </option>
+                                                                            {% endfor %}
+                                                                        </select>
+                                                                    </div>
+                                                                    <div>
+                                                                        <label class="form-label">Rating</label>
+                                                                        <select id="inputState"
+                                                                                class="form-select">
+                                                                            <option style="color: green">
+                                                                                Grün
+                                                                            </option>
+                                                                            <option style="color: yellow">
+                                                                                Gelb
+                                                                            </option>
+                                                                            <option style="color: red">Rot
+                                                                            </option>
+                                                                            <option style="color: grey"
+                                                                                    selected="selected">Not
+                                                                                rated
+                                                                            </option>
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <hr/>
+                                                            <div>
+                                                                <div class="col-12">
+                                                                    <div class="mb-3">
+                                                                        <label for="formFileMultiple"
+                                                                               class="form-label">Attachements</label>
+                                                                        <input class="form-control"
+                                                                               type="file"
+                                                                               id="formFileMultiple"
+                                                                               multiple>
+                                                                    </div>
+                                                                </div>
+                                                                <label for="url">Link:</label>
+                                                                <input
+                                                                        type="url"
+                                                                        name="url"
+                                                                        id="url"
+                                                                        placeholder="https://example.com"
+                                                                        pattern="www://.*"
+                                                                        size="30"
+                                                                        required/>
+
+                                                                {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                                    <div class="col-12">
+                                                                        <div class="mb-3">
+                                                                            <div id="performer"
+                                                                                 class="col-6">
+                                                                                <label for="inputEmail"
+                                                                                       class="form-label">Responsible</label>
+                                                                                <input type="text"
+                                                                                       id="fname"
+                                                                                       name="fname"><br><br>
+                                                                                <select id="inputState"
+                                                                                        class="form-select"
+                                                                                        id="inputEmail">
+                                                                                    {% for user in Users %}
+                                                                                        <option style="color: green">{{ user.email }}</option>
+                                                                                    {% endfor %}
+                                                                                </select>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                {% endif %}
+
+                                                                {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                                    <br>
+                                                                    <br>
+                                                                {% endif %}
+                                                            </div>
+                                                    </form>
+                                                </div>
+                                                <div class="modal-footer">
+                                                    <button type="button" class="btn btn-secondary"
+                                                            data-bs-dismiss="modal">Close
+                                                    </button>
+                                                    <button type="button" class="btn btn-primary">
+                                                        Save
+                                                        changes
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <p>
+                                    <button type="button" class="btn btn-info">
+                                        <a href="mailto:recipient@mercedes-benz.com?cc=CarlineCoordinator@mercedes-benz.com&subject=Rating for {{ workpackage.WP_ID }} not yet received"
+                                           color="white">Send
+                                            Email</a>
+                                    </button>
+                                </p>
+
+                                </div>
+                            {% endif %}
+                        {% endfor %}
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade" id="ML-E" role="tabpanel" aria-labelledby="pills-home-tab">
+        <div class="flex justify-between gap-3 my-3">
+            <div class="list-group">
+                {% for workpackage in Workpackages %}
+
+                    {% if workpackage.rg_area == 'RG_E' %}
+                        <div class="d-flex list-group-item list-group-item-action">
+                            <div class="p-2 col-md-1">
+                                {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                    <p class="p-2 col-md-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                             height="16"
+                                             fill="red"
+                                             style="border: 1px solid black; border-radius: 50%"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </p>
+                                {% endif %}
+                                {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                    <p class="p-2 col-md-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                             height="16"
+                                             fill="yellow"
+                                             style="border: 1px solid black; border-radius: 50%"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </p>
+                                {% endif %}
+                                {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                    <p class="p-2 col-md-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                             height="16"
+                                             fill="green"
+                                             style="border: 1px solid black; border-radius: 50%"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </p>
+                                {% endif %}
+                                {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                    <p class="p-2 col-md-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                             height="16"
+                                             fill="grey"
+                                             style="border: 1px solid black; border-radius: 50%"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </p>
+                                {% endif %}
+                            </div>
+                            <p class="p-2 col-md-1">
+                                <button class="btn" disabled>{{ workpackage.id }}</button>
+                            </p>
+                            <p class="p-2 col-md-5">{{ workpackage.kpi }}</p>
+                            <p class="p-2 col-md-1"> {{ workpackage.rg_area }}</p>
+                            <p class="p-2 col-md-2">
+                                <button class="btn"
+                                        disabled>{{ workpackage.recipient }}</button>
+                            </p>
+                            <!-- Button trigger modal -->
+                            <p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                    Launch demo modal
+                                </button>
+                            </p>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content" style="width:200%">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                Modal title</h1>
+                                            <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <div class="col-md-12 ">
+
+                                                            {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                                <p class="p-2 col-md-2 circle red">
+                                                                </p>
+                                                            {% endif %}
+                                                            {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                                <p class="p-2 col-md-2 circle yellow">
+                                                                </p>
+                                                            {% endif %}
+                                                            {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                                                <p class="p-2 col-md-2 circle green">
+                                                                </p>
+                                                            {% endif %}
+                                                            {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                                                <p class="p-2 col-md-2 circle grey">
+                                                                </p>
+                                                            {% endif %}
+                                                            <label for="inputState"
+                                                                   class="col-md-2 form-label"><b>
+                                                                Total Rating</b></label>
+                                                            <br/>
+
+                                                        </div>
+                                                    </div>
+                                                    <hr/>
+                                                    <div>
+                                                        <div class="col-md-4 ml-auto">
+                                                            <label for="inputState"
+                                                                   class="form-label"><b>Recipient</b></label>
+                                                            <input class="form-control"
+                                                                   type="text"
+                                                                   placeholder="{{ workpackage.Recipient }}"
+                                                                   aria-label="Disabled input example"
+                                                                   disabled>
+                                                        </div>
+                                                        <div class="md-4">
+                                                            <label for="inputState"
+                                                                   class="form-label">Rating</label>
+                                                            <select id="inputState"
+                                                                    class="form-select">
+                                                                <option style="color: green">
+                                                                    Grün
+                                                                </option>
+                                                                <option style="color: yellow">
+                                                                    Gelb
+                                                                </option>
+                                                                <option style="color: red">Rot
+                                                                </option>
+                                                                <option style="color: grey"
+                                                                        selected="selected">Not
+                                                                    rated
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div id="recipient" class="md-6">
+                                                            <label for="inputEmail"
+                                                                   class="form-label">Email</label>
+                                                            <select class="form-select"
+                                                                    id="inputEmail">
+                                                                {% for user in Users %}
+                                                                    <option style="color: green">{{ user.email }}</option>
+                                                                {% endfor %}
+                                                                <option style="color: green">
+                                                                    None
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <hr/>
+                                                        <div class="col-4">
+                                                            <label for="inputState"
+                                                                   class="form-label"><b>Deadline</b></label>
+                                                            <input class="form-control" type="text"
+                                                                   placeholder="15.2.2026"
+                                                                   aria-label="Disabled input example"
+                                                                   disabled>
+                                                            <div id="performer" class="col-6">
+                                                                <label for="inputEmail"
+                                                                       class="form-label">Email</label>
+                                                                <select id="inputState"
+                                                                        class="form-select"
+                                                                        id="inputEmail">
+                                                                    {% for user in Users %}
+                                                                        <option style="color: orange">
+                                                                            carlinecoordinator1@mercedes-benz.com
+                                                                        </option>
+                                                                        <option style="color: orange">
+                                                                            carlinecoordinator2@mercedes-benz.com
+                                                                        </option>
+                                                                        <option style="color: orange">
+                                                                            carlinecoordinator3@mercedes-benz.com
+                                                                        </option>
+                                                                    {% endfor %}
+                                                                </select>
+                                                            </div>
+                                                            <div>
+                                                                <label class="form-label">Rating</label>
+                                                                <select id="inputState"
+                                                                        class="form-select">
+                                                                    <option style="color: green">
+                                                                        Grün
+                                                                    </option>
+                                                                    <option style="color: yellow">
+                                                                        Gelb
+                                                                    </option>
+                                                                    <option style="color: red">Rot
+                                                                    </option>
+                                                                    <option style="color: grey"
+                                                                            selected="selected">Not
+                                                                        rated
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr/>
+                                                    <div>
+                                                        <div class="col-12">
+                                                            <div class="mb-3">
+                                                                <label for="formFileMultiple"
+                                                                       class="form-label">Attachements</label>
+                                                                <input class="form-control"
+                                                                       type="file"
+                                                                       id="formFileMultiple"
+                                                                       multiple>
+                                                            </div>
+                                                        </div>
+                                                        <label for="url">Link:</label>
+                                                        <input
+                                                                type="url"
+                                                                name="url"
+                                                                id="url"
+                                                                placeholder="https://example.com"
+                                                                pattern="www://.*"
+                                                                size="30"
+                                                                required/>
+
+                                                        {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                            <div class="col-12">
+                                                                <div class="mb-3">
+                                                                    <div id="performer"
+                                                                         class="col-6">
+                                                                        <label for="inputEmail"
+                                                                               class="form-label">Responsible</label>
+                                                                        <select id="inputState"
+                                                                                class="form-select"
+                                                                                id="inputEmail">
+                                                                            {% for user in Users %}
+                                                                                <option style="color: green">{{ user.email }}</option>
+                                                                            {% endfor %}
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+
+                                                        {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                            <br>
+                                                            <br>
+                                                        {% endif %}
+                                                    </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close
+                                            </button>
+                                            <button type="button" class="btn btn-primary">
+                                                Save
+                                                changes
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <button type="button" class="btn btn-info">
+                                <a href="mailto:recipient@mercedes-benz.com?cc=CarlineCoordinator@mercedes-benz.com&subject=Rating for {{ workpackage.WP_ID }} not yet received"
+                                   color="white">Send
+                                    Email</a>
+                            </button>
+                        </p>
+
+                        </div>
+                    {% endif %}
+                {% endfor %}
+        </div>
+    </div>
+    <div class="tab-pane fade" id="ML-F" role="tabpanel" aria-labelledby="pills-profile-tab">
+        <div class="flex flex-col gap-3 basis-1/2 h-96">
+            <div class="list-group">
+                {% for workpackage in Workpackages %}
+
+                    {% if workpackage.rg_area == 'RG_F' %}
+                        <div class="d-flex list-group-item list-group-item-action">
+                            <div class="p-2 col-md-1">
+                                {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                    <p class="p-2 col-md-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                             height="16"
+                                             fill="red"
+                                             style="border: 1px solid black; border-radius: 50%"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </p>
+                                {% endif %}
+                                {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                    <p class="p-2 col-md-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                             height="16"
+                                             fill="yellow"
+                                             style="border: 1px solid black; border-radius: 50%"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </p>
+                                {% endif %}
+                                {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                    <p class="p-2 col-md-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                             height="16"
+                                             fill="green"
+                                             style="border: 1px solid black; border-radius: 50%"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </p>
+                                {% endif %}
+                                {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                    <p class="p-2 col-md-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16"
+                                             height="16"
+                                             fill="grey"
+                                             style="border: 1px solid black; border-radius: 50%"
+                                             class="bi bi-circle-fill" viewBox="0 0 16 16">
+                                            <circle cx="8" cy="8" r="8"></circle>
+                                        </svg>
+                                    </p>
+                                {% endif %}
+                            </div>
+                            <p class="p-2 col-md-1">
+                                <button class="btn" disabled>{{ workpackage.id }}</button>
+                            </p>
+                            <p class="p-2 col-md-5">{{ workpackage.kpi }}</p>
+                            <p class="p-2 col-md-1"> {{ workpackage.rg_area }}</p>
+                            <p class="p-2 col-md-2">
+                                <button class="btn"
+                                        disabled>{{ workpackage.recipient }}</button>
+                            </p>
+                            <!-- Button trigger modal -->
+                            <p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
+                                    Launch demo modal
+                                </button>
+                            </p>
+
+
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModal" tabindex="-1"
+                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content" style="width:200%">
+                                        <div class="modal-header">
+                                            <h1 class="modal-title fs-5" id="exampleModalLabel">
+                                                Modal title</h1>
+                                            <button type="button" class="btn-close"
+                                                    data-bs-dismiss="modal"
+                                                    aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="modal-body">
+                                                    <div class="container-fluid">
+                                                        <div class="col-md-12 ">
+
+                                                            {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                                <p class="p-2 col-md-2 circle red">
+                                                                </p>
+                                                            {% endif %}
+                                                            {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                                <p class="p-2 col-md-2 circle yellow">
+                                                                </p>
+                                                            {% endif %}
+                                                            {% if workpackage.recipient_rating == workpackage.Rating.Gruen %}
+                                                                <p class="p-2 col-md-2 circle green">
+                                                                </p>
+                                                            {% endif %}
+                                                            {% if workpackage.recipient_rating == workpackage.Rating.Undefined %}
+                                                                <p class="p-2 col-md-2 circle grey">
+                                                                </p>
+                                                            {% endif %}
+                                                            <label for="inputState"
+                                                                   class="col-md-2 form-label"><b>
+                                                                Total Rating</b></label>
+                                                            <br/>
+
+                                                        </div>
+                                                    </div>
+                                                    <hr/>
+                                                    <div>
+                                                        <div class="col-md-4 ml-auto">
+                                                            <label for="inputState"
+                                                                   class="form-label"><b>Recipient</b></label>
+                                                            <input class="form-control"
+                                                                   type="text"
+                                                                   placeholder="{{ workpackage.Recipient }}"
+                                                                   aria-label="Disabled input example"
+                                                                   disabled>
+                                                        </div>
+                                                        <div class="md-4">
+                                                            <label for="inputState"
+                                                                   class="form-label">Rating</label>
+                                                            <select id="inputState"
+                                                                    class="form-select">
+                                                                <option style="color: green">
+                                                                    Grün
+                                                                </option>
+                                                                <option style="color: yellow">
+                                                                    Gelb
+                                                                </option>
+                                                                <option style="color: red">Rot
+                                                                </option>
+                                                                <option style="color: grey"
+                                                                        selected="selected">Not
+                                                                    rated
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <div id="recipient" class="md-6">
+                                                            <label for="inputEmail"
+                                                                   class="form-label">Email</label>
+                                                            <select class="form-select"
+                                                                    id="inputEmail">
+                                                                {% for user in Users %}
+                                                                    <option style="color: green">{{ user.email }}</option>
+                                                                {% endfor %}
+                                                                <option style="color: green">
+                                                                    None
+                                                                </option>
+                                                            </select>
+                                                        </div>
+                                                        <hr/>
+                                                        <div class="col-4">
+                                                            <label for="inputState"
+                                                                   class="form-label"><b>Deadline</b></label>
+                                                            <input class="form-control" type="text"
+                                                                   placeholder="15.2.2026"
+                                                                   aria-label="Disabled input example"
+                                                                   disabled>
+                                                            <div id="performer" class="col-6">
+                                                                <label for="inputEmail"
+                                                                       class="form-label">Email</label>
+                                                                <select id="inputState"
+                                                                        class="form-select"
+                                                                        id="inputEmail">
+                                                                    {% for user in Users %}
+                                                                        <option style="color: orange">
+                                                                            carlinecoordinator1@mercedes-benz.com
+                                                                        </option>
+                                                                        <option style="color: orange">
+                                                                            carlinecoordinator2@mercedes-benz.com
+                                                                        </option>
+                                                                        <option style="color: orange">
+                                                                            carlinecoordinator3@mercedes-benz.com
+                                                                        </option>
+                                                                    {% endfor %}
+                                                                </select>
+                                                            </div>
+                                                            <div>
+                                                                <label class="form-label">Rating</label>
+                                                                <select id="inputState"
+                                                                        class="form-select">
+                                                                    <option style="color: green">
+                                                                        Grün
+                                                                    </option>
+                                                                    <option style="color: yellow">
+                                                                        Gelb
+                                                                    </option>
+                                                                    <option style="color: red">Rot
+                                                                    </option>
+                                                                    <option style="color: grey"
+                                                                            selected="selected">Not
+                                                                        rated
+                                                                    </option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <hr/>
+                                                    <div>
+                                                        <div class="col-12">
+                                                            <div class="mb-3">
+                                                                <label for="formFileMultiple"
+                                                                       class="form-label">Attachements</label>
+                                                                <input class="form-control"
+                                                                       type="file"
+                                                                       id="formFileMultiple"
+                                                                       multiple>
+                                                            </div>
+                                                        </div>
+                                                        <label for="url">Link:</label>
+                                                        <input
+                                                                type="url"
+                                                                name="url"
+                                                                id="url"
+                                                                placeholder="https://example.com"
+                                                                pattern="www://.*"
+                                                                size="30"
+                                                                required/>
+
+                                                        {% if workpackage.recipient_rating == workpackage.Rating.Rot %}
+                                                            <div class="col-12">
+                                                                <div class="mb-3">
+                                                                    <div id="performer"
+                                                                         class="col-6">
+                                                                        <label for="inputEmail"
+                                                                               class="form-label">Responsible</label>
+
+                                                                        <select id="inputState"
+                                                                                class="form-select"
+                                                                                id="inputEmail">
+                                                                            {% for user in Users %}
+                                                                                <option style="color: green">{{ user.email }}</option>
+                                                                            {% endfor %}
+                                                                        </select>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        {% endif %}
+
+                                                        {% if workpackage.recipient_rating == workpackage.Rating.Gelb %}
+                                                            <br>
+                                                            <br>
+                                                        {% endif %}
+                                                    </div>
+                                            </form>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                    data-bs-dismiss="modal">Close
+                                            </button>
+                                            <button type="button" class="btn btn-primary">
+                                                Save
+                                                changes
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p>
+                            <button type="button" class="btn btn-info">
+                                <a href="mailto:recipient@mercedes-benz.com?cc=CarlineCoordinator@mercedes-benz.com&subject=Rating for {{ workpackage.WP_ID }} not yet received"
+                                   color="white">Send
+                                    Email</a>
+                            </button>
+                        </p>
+
+                        </div>
+                    {% endif %}
+                {% endfor %}
+        </div>
+    </div>
+    <div class="tab-pane fade" id="pills-contact" role="tabpanel"
+         aria-labelledby="pills-contact-tab">...
+    </div>
+    <div class="tab-content col-6" id="nav-tabContent">
+        <div id="{{ workpackage.id }}" class="tab-pane fade show col-4 active" role="tabpanel"
+             aria-labelledby="list-home-2">
+
+        </div>
+    </div>
+    </body>
+
+{% endblock content %}

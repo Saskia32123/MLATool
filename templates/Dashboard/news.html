@@ -1,0 +1,95 @@
+{% extends 'Dashboard/index.html' %}
+
+{% block content %}
+    <div class="d-flex flex-row flex-grow-0 p-3 my-toasting">
+        <br/>
+        <div class="toast-container position-static align-center">
+            <h2>Notifications</h2>
+            <br/>
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <div class="d-flex" style="align-items: flex-start;">
+                    </div>
+                    <strong class="me-auto" style="margin-left: 10px">Recipient</strong>
+                    <small>11 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    The recipient for the measure M-12.21.2 changed from: Timo Tester to Frank Muster
+                </div>
+            </div>
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <div class="d-flex" style="align-items: flex-start;">
+                        <i class='box green'></i>
+                    </div>
+                    <strong class="me-auto" style="margin-left: 10px">Rating</strong>
+                    <small>1 day ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    The status for WP-22.24 changed from "yellow" to "green". Reason Measure 1.22.2 was successfully
+                    implemented.
+                </div>
+            </div>
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <div class="d-flex" style="align-items: flex-start;">
+                        <i class='box red'></i>
+                    </div>
+                    <strong class="me-auto" style="margin-left: 10px">Rating</strong>
+                    <small>21 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    The rating changed from 'good' to 'critical'. Reason: There is a cyber incident regarding
+                    third-party-libraries. No measures defined yet.
+                </div>
+            </div>
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <div class="d-flex" style="align-items: flex-start;">
+                        <i class='box red'></i>
+                    </div>
+                    <strong class="me-auto" style="margin-left: 10px">Measure</strong>
+                    <small>51 mins ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    The measure M-12.12 is overdue and won't get resolved in time!
+                </div>
+            </div>
+            <div class="toast show" role="alert" aria-live="assertive" aria-atomic="true">
+                <div class="toast-header">
+                    <div class="d-flex" style="align-items: flex-start;">
+                        <i class='box green'></i>
+                    </div>
+                    <strong class="me-auto" style="margin-left: 10px">Rating</strong>
+                    <small>1 hour ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    The rating for WP-12.21 changed from "yellow" to "green". Reason Measure M-1.22.2 was successfully
+                    implemented.
+                </div>
+            </div>
+            <div class="toast show" role="alert" aria-live="assertive"
+                 aria-atomic="true">
+                <div class="toast-header">
+                    <div class="d-flex" style="align-items: flex-start;">
+                        <i class='box yellow'></i>
+                    </div>
+                    <strong class="me-auto" style="margin-left: 10px">Recipient</strong>
+                    <small class="text-muted">2 seconds ago</small>
+                    <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+                </div>
+                <div class="toast-body">
+                    Attention: C-SP1.23 has no recipient anymore!
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+
+{% endblock content %}
