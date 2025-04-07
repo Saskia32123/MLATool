@@ -12,7 +12,7 @@ Here various users can be defined, added to a certain group and given specific a
 
 Workpackages can be administered too:
 
-![Add_Workpackages](https://github.com/user-attachments/assets/0abf2bd5-8d42-4889-a59e-1e0ec2018dee)
+![Add_Workpackages](https://github.com/user-attachments/assets/2a6e32bf-e23d-4cdd-8015-e83c728a2d43)
 
 ## The user interface
 For regular users there are various tabs.
