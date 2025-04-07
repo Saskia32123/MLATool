@@ -33,10 +33,10 @@ From there the details why the maturity level for some components don't fulfill 
 
 ![Components](https://github.com/user-attachments/assets/58275ed2-2c86-4ba2-a6fe-f59472614626)
 
-## Administrations
+## Administration
 For administrators there exist an additional application to administer users, workpackages and the like.
 
-### User administratios
+### User Administration
 Here various users can be defined, added to a certain group and given specific administration rights (e.g. for reading, writing, updating or deleting). Workpackages can be administered too.
 
 ![Add_User_And_Permissions](https://github.com/user-attachments/assets/5ac99d49-c631-48dc-8252-17ad3399f855)
