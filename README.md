@@ -2,18 +2,6 @@
 The tool was created to evalutate the maturity level for various components and the overall project and therefore easily track the project status and define measures, when the project is going off-road. 
 It also provides comfy features: visualisation, mailing and more.
 
-## Administration
-For administrators there exist an additional application to administer users, workpackages and the like.
-
-### User Administration
-Here various users can be defined, added to a certain group and given specific administration rights (e.g. for reading, writing, updating or deleting):
-
-![Add_User_And_Permissions](https://github.com/user-attachments/assets/5ac99d49-c631-48dc-8252-17ad3399f855)
-
-Workpackages can be administered too:
-
-![Add_Workpackages](https://github.com/user-attachments/assets/2a6e32bf-e23d-4cdd-8015-e83c728a2d43)
-
 ## The user interface
 For regular users there are various tabs.
 
@@ -44,4 +32,17 @@ Also emails be sent (prefilled with work package details):
 From there the details why the maturity level for some components don't fulfill the criterias can be viewed in a more detailed way:
 
 ![Components](https://github.com/user-attachments/assets/58275ed2-2c86-4ba2-a6fe-f59472614626)
+
+
+## Administration
+For administrators there exist an additional application to administer users, workpackages and the like.
+
+### User Administration
+Here various users can be defined, added to a certain group and given specific administration rights (e.g. for reading, writing, updating or deleting):
+
+![Add_User_And_Permissions](https://github.com/user-attachments/assets/5ac99d49-c631-48dc-8252-17ad3399f855)
+
+Workpackages can be administered too:
+
+![Add_Workpackages](https://github.com/user-attachments/assets/2a6e32bf-e23d-4cdd-8015-e83c728a2d43)
 
